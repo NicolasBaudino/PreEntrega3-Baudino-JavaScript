@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <h1>TIENDA ROPA</h1>
+
+    <section>
+      <h3>Ingresa y recibí beneficios!</h3>
+      <form id="formulario">
+        <label for="nombre">
+          Nombre
+          <input type="text" name="nombre" id="nombre" placeholder="Nicolás" />
+        </label>
+        <label for="email">
+          Email:
+          <input type="email" name="email" id="email" placeholder="nicolas@gmail.com"/>
+          <small id="mensaje"></small>
+        </label>
+        <button type="submit" class="btn btn-success" id="btnEnviar">Enviar</button>
+        <button type="button" class="btn btn-danger" id="btnBorrar">Borrar</button>
+      </form>
+    </section>
+
+    <!-- BOTONES -->
+    <div>
+        <button type="button" class="btn btn-secondary" id="btnMenorMayor">Menor a mayor</button>
+        <button type="button" class="btn btn-secondary" id="btnMayorMenor">Mayor a menor</button>
+    </div>
+    
+    <!-- PRODUCTOS -->
+    <section>
+        <div id="prods" class="row">
+            <!-- CARTAS DE LOS PRODUCTOS -->
+        </div>
+    </section>
+    
+    <!-- CARRITO -->
+    <section>
+        <h4>Tu carrito:</h4>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody id="tablacarrito">
+            <!-- TABLA DEL CARRITO -->
+          </tbody>
+        </table>
+        <h4 id="total">
+            <!-- TOTAL DEL CARRITO -->
+        </h4>
+        <button id="btnFinalizarCompra" type="button" class="btn btn-success">Finalizar compra</button>
+    </section>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="productos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
